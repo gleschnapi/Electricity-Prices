@@ -1,5 +1,5 @@
 
-app_identifier("se.j0nas.EPWatch")
+app_identifier("eu.davidglatter.EPWatchGleschnapi")
 
 ignore_language_directory_validation(false)
 

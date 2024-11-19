@@ -8,5 +8,5 @@
 import Foundation
 
 extension String {
-    public static let appGroupIdentifier: String = "group.EPWatch"
+    public static let appGroupIdentifier: String = "group.EPWatchGleschnapi"
 }
