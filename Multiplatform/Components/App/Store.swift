@@ -38,7 +38,7 @@ class Store: ObservableObject {
     @Published private(set) var products: [Product] = []
     @Published private(set) var purchasedProducts: [Product] = []
     @AppStorage("hasPurchasedPro")
-    private(set) var hasPurchasedProVersion: Bool = false
+    private(set) var hasPurchasedProVersion: Bool = true
     private(set) var isRestoringPurchases: Bool = false
 
     var updateListenerTask: Task<Void, Error>? = nil
@@ -207,7 +207,7 @@ extension Array where Element == Product {
 extension Store {
     static let mockedInitial: Store = {
         let store = Store()
-        store.hasPurchasedProVersion = false
+        store.hasPurchasedProVersion = true
         return Store()
     }()
 

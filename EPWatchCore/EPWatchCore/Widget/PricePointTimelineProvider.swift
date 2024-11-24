@@ -77,7 +77,7 @@ public struct PricePointTimelineProvider: TimelineProvider {
 
                 var entries: [Entry] = []
                 let currentHour = calendar.startOfHour(
-                    for: isRunningForSnapshots() && use941ForSnapshots() ? .nine41 : .now
+                    for: isRunningForSnapshots() && use941ForSnapshots() ? .now : .now
                 )
                 for price in allPrices {
                     guard price.date >= currentHour else {

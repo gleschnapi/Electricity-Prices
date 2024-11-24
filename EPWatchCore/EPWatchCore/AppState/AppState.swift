@@ -253,7 +253,7 @@ public class AppState: ObservableObject {
         }
         guard !isRunningForSnapshots() else {
             prices = try await mockedPrices()
-            currentPrice = prices.price(for: use941ForSnapshots() ? .nine41 : .now)
+            currentPrice = prices.price(for: use941ForSnapshots() ? .now : .now)
             return
         }
         guard priceArea != nil else {
