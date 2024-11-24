@@ -178,7 +178,7 @@ public class AppState: ObservableObject {
         if isRunningForSnapshots() {
             // Mocked prices are set in downloadPrices()
             chartStyle = .bar
-            chartViewMode = .today
+            chartViewMode = .todayAndTomorrow
             currency = Region.current?.suggestedCurrency ?? .EUR
             exchangeRate = .mockedEUR(to: currency)
             currencyPresentation = .automatic
